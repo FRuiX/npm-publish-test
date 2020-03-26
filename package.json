@@ -1,5 +1,5 @@
 {
-  "name": "npm-publish-test-fruix",
+  "name": "npm-publish-test",
   "version": "1.0.0",
   "description": "a test for npm publish",
   "main": "lib/Message.jsx",
