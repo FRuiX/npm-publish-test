@@ -1,0 +1,49 @@
+.message-box {
+  
+  .message-modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0;
+    z-index: -1;
+    transition: all .15s linear;
+  }
+  &.in {
+    .message-modal {
+      z-index: 1040;
+      opacity: 0.5;
+    }
+    .message-content-box {
+      z-index: 1050;
+      opacity: 1;
+    }
+  }
+  .message-content-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content-content {
+      position: relative;
+      background-color: #fff;
+      border-radius: 6px;
+      min-width: 10%;
+      display: inline-block;
+      .content-body {
+        padding: 15px;
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
